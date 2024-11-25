@@ -20,7 +20,7 @@ const xlsx = require('xlsx');
 
 const port = process.env.PORT || 1000;
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: ["https://deploy-mern-1whq.vercel.app"],
     methods: ['GET', 'POST'],
     credentials: true
 }));
