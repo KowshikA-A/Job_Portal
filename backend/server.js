@@ -18,12 +18,9 @@ const app = express();
 const xlsx = require('xlsx');
 
 
-const allowedOrigins = process.env.NODE_ENV === 'production' 
-  ? ['https://job-portalfrontend.vercel.app']  
-  : ['http://localhost:3000', 'https://job-portalfrontend.vercel.app']; 
 
 app.use(cors({
-    origin: allowedOrigins,
+    origin: ["https://job-portalfrontend.vercel.app/login"],
     methods: ['GET', 'POST'],
     credentials: true
 }));
