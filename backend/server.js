@@ -20,7 +20,7 @@ const xlsx = require('xlsx');
 
 
 app.use(cors({
-    origin: ["https://job-portalfrontend.vercel.app/login"],
+    origin: ["https://job-portalfrontend.vercel.app", "http://localhost:3000"],
     methods: ['GET', 'POST'],
     credentials: true
 }));
