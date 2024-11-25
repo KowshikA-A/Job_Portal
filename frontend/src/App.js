@@ -35,6 +35,19 @@ function App() {
     const handleYearChange = (newYear) => setYear(Number(newYear));
 
     const toggleCompanyList = () => setShowCompanyList((prev) => !prev);
+axios.defaults.withCredentials = true;
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+
+  axios.post('https://job-portalapi.vercel.app/register', { name,password })
+    .then(result => {
+      console.log(result);
+    })
+    .catch(err => {
+      console.log(err);
+    });
+};
 
     return ( <
             div className = "app-layout" >
