@@ -19,17 +19,25 @@ const xlsx = require('xlsx');
 
 
 const port = process.env.PORT || 1000;
+const allowedOrigins = process.env.NODE_ENV === 'production' 
+  ? ['https://deploy-mern-1whq.vercel.app']
+  : ['http://localhost:3000', 'https://deploy-mern-1whq.vercel.app'];
+
 app.use(cors({
-    origin:  ["https://deploy-mern-1whq.vercel.app"],
+    origin: allowedOrigins,
     methods: ['GET', 'POST'],
     credentials: true
 }));
+
 app.use(express.json());
 app.use(bodyParser.json());
 
 mongoose.connect(process.env.MONGO_URI)
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.error('MongoDB connection error:', err));
+app.get('/', (req, res) => {
+  res.send('Welcome to the Job Portal!');
+});
 
 app.post('/api/register', [
     body('username').isString().notEmpty().withMessage('Username is required'),
