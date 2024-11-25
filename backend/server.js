@@ -18,10 +18,9 @@ const app = express();
 const xlsx = require('xlsx');
 
 
-const port = process.env.PORT || 1000;
 const allowedOrigins = process.env.NODE_ENV === 'production' 
-  ? ['https://deploy-mern-1whq.vercel.app']
-  : ['http://localhost:3000', 'https://deploy-mern-1whq.vercel.app'];
+  ? ['https://job-portalfrontend.vercel.app']  
+  : ['http://localhost:3000', 'https://job-portalfrontend.vercel.app']; 
 
 app.use(cors({
     origin: allowedOrigins,
