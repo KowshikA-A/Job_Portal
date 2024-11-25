@@ -18,9 +18,9 @@ const app = express();
 const xlsx = require('xlsx');
 
 
-
+const port = process.env.PORT || 1000;
 app.use(cors({
-    origin: ["https://job-portalfrontend.vercel.app", "http://localhost:3000"],
+    origin: ["https://job-portalfrontend.vercel.app"],
     methods: ['GET', 'POST'],
     credentials: true
 }));
