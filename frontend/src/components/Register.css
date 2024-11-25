@@ -1,0 +1,93 @@
+/* Register Page Styles */
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.register-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    width: 90%;
+    /* Changed from 90% to 100% for consistency */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.register-button {
+    width: 70%;
+    /* Changed from 70% to 100% for full width consistency */
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    /* Adjusted margin for spacing */
+    margin-left: 13%;
+}
+
+.register-button:hover {
+    background-color: #45a049;
+}
+
+
+/* Login Prompt Styles */
+
+.login-prompt {
+    margin-top: 20px;
+    display: flex;
+    /* Use flex layout */
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
+    text-align: center;
+    /* Center text within the container */
+}
+
+.login-prompt span {
+    margin-right: 10%;
+    margin-left: 200px;
+}
+
+.login-prompt button {
+    background: none;
+    border: none;
+    color: #0008ff;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.login-prompt button:hover {
+    color: #0207a0;
+    background-color: #ffffff;
+}

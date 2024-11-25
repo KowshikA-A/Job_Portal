@@ -1,0 +1,81 @@
+/* Navbar Styles */
+
+.navbar {
+    display: flex !important;
+    align-items: center !important;
+    background-color: orange !important;
+    /* Background color of the navbar */
+    padding: 10px !important;
+    height: 57px !important;
+    /* Define a height for the navbar */
+    position: fixed !important;
+    /* Fix the navbar to the top */
+    top: 0 !important;
+    /* Align to the top of the viewport */
+    left: 0 !important;
+    /* Align to the left of the viewport */
+    width: 100% !important;
+    /* Ensure it spans the full width */
+    z-index: 1000 !important;
+    /* Ensure it stays above other content */
+    justify-content: space-between !important;
+    /* Space out items in the container */
+}
+
+.navbar-logo {
+    height: 75px !important;
+    /* Adjust the size of the logo */
+    width: 130px !important;
+    /* Adjust the size of the logo */
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.navbar-menu li {
+    margin: 0;
+}
+
+.navbar-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar-search {
+    margin-left: auto;
+    /* Push search input to the right */
+    margin-right: 20px;
+    /* Space between search input and logout button */
+}
+
+.navbar-search input {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.logout-button {
+    background-color: #ff4d4d;
+    /* Red background color */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 180px;
+    width: 8%;
+    margin-right: 30px;
+}
+
+.logout-button:hover {
+    background-color: #800101;
+    /* Darker red on hover */
+}

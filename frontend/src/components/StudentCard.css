@@ -1,0 +1,149 @@
+.card-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Times New Roman';
+}
+
+.student-card {
+    border: 2px solid;
+    /* Make sure the border is set here */
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 30px);
+    min-height: 250px;
+    text-align: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    cursor: pointer;
+}
+
+.student-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Specific hover styles for each status color */
+
+.student-card:hover {
+    background-color: rgba(0, 128, 0, 0.8);
+    /* Darken the background color for Placed */
+    border-color: darkgreen;
+    /* Darken border for Placed */
+}
+
+.student-card[data-status='shortlisted']:hover {
+    background-color: rgba(244, 187, 68, 0.8);
+    /* Darken the background color for Shortlisted */
+    border-color: orange;
+    /* Keep border color same */
+}
+
+.student-card[data-status='not-placed']:hover {
+    background-color: #ff1a1a;
+    /* Darken the background color for Not Placed */
+    border-color: red;
+    /* Keep border color same */
+}
+
+.student-card[data-status='applied']:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Keep background white for Applied */
+    border-color: white;
+    /* Keep border color same */
+}
+
+.student-companies {
+    text-align: left;
+    margin-top: 10px;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.student-companies ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.company-status {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.company-name,
+.status-colon,
+.status {
+    margin: 0 5px;
+}
+
+.status-colon {
+    font-weight: bold;
+}
+
+.student-card::-webkit-scrollbar {
+    width: 8px;
+}
+
+.student-card::-webkit-scrollbar-thumb {
+    background-color: #dee2e6;
+    border-radius: 10px;
+}
+
+.student-card::-webkit-scrollbar-track {
+    background: #f8f9fa;
+}
+
+@media (max-width: 1300px) {
+    .student-card {
+        width: calc(29% - 30px);
+    }
+}
+
+@media (max-width: 768px) {
+    .student-card {
+        width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 680px) {
+    .student-card {
+        width: calc(100% - 30px);
+    }
+}
+
+.student-card-container {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltipp {
+    visibility: hidden;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    z-index: 1;
+}
+
+.student-card-container:hover .tooltipp {
+    visibility: visible;
+}

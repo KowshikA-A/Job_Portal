@@ -1,0 +1,175 @@
+.student-list {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.student-list-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.student-list-header h2 {
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.search-input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.student-cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.student-card {
+    background-color: #f8f9fa;
+    border: 2px solid #dee2e6;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .student-cards-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .student-cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .student-cards-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.student-card.placed {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.student-card.not-placed {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.student-card.shortlisted {
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+
+.student-card:hover {
+    background-color: #e2e6ea;
+}
+
+.student-filter-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    border-radius: 5px;
+    color: black;
+    width: 130px;
+}
+
+.student-filter-button:hover {
+    background-color: #f7f7f7;
+}
+
+.button-container {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+}
+
+.student-filter-button.selected {
+    background-color: #1d8aff;
+    color: white;
+    border: 1px solid #001934;
+    box-shadow: 0 4px 8px rgba(0, 63, 131, 0.5);
+}
+
+.student-filter-button:not(.selected):hover {
+    background-color: #ffffff;
+}
+
+
+/* Tooltip container */
+
+[data-tooltip] {
+    position: relative;
+    cursor: pointer;
+}
+
+
+/* Tooltip text - Positioned below the element */
+
+[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 110%;
+    /* Position the tooltip below the element */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    white-space: wrap;
+}
+
+
+/* Tooltip arrow - Adjusted to point downwards */
+
+[data-tooltip]::before {
+    content: '';
+    position: absolute;
+    top: 180%;
+    /* Position the arrow below */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+
+/* Show tooltip on hover */
+
+[data-tooltip]:hover::after,
+[data-tooltip]:hover::before {
+    opacity: 1;
+    transform: translateX(-50%) translateY(2px);
+    /* Move it slightly downward */
+    pointer-events: auto;
+}

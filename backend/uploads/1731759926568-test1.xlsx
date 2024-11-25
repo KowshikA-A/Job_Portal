@@ -1,0 +1,78 @@
+Name,Reg_No,Company,Year,ApplicationStatus,School,Category,CTC
+John Doe,21BCE0001,DEF Solutions,2023,Placed,SCOPE,Super dream internship,45 LPA
+Jane Smith,21BME0002,MNO Corp,2024,Not placed,SMEC,Dream offer,20 LPA
+Alice Brown,21BEC0003,GHI Technologies,2023,Shortlisted,SENSE,Super dream offer,25 LPA
+Bob White,21BCE0004,JKL Enterprises,2024,Applied,SCOPE,Restricted dream offer,18 LPA
+Charlie Black,21BME0005,XYZ Ltd,2023,Placed,SMEC,Super dream internship,50 LPA
+Emily Green,21BEC0006,RSU Co.,2023,Not placed,SENSE,Dream internship,15 LPA
+David Blue,21BCE0007,ABC Systems,2024,Shortlisted,SCOPE,Super dream offer,30 LPA
+Fay Gray,21BME0008,MNO Solutions,2023,Applied,SMEC,Dream internship,22 LPA
+George Yellow,21BEC0009,DEF Enterprises,2023,Placed,SENSE,Super dream internship,35 LPA
+Hannah Pink,21BCE0010,GHI Tech,2024,Not placed,SCOPE,Super dream offer,40 LPA
+Jack Red,21BME0011,JKL Ltd,2023,Placed,SMEC,Super dream offer,42 LPA
+Lily White,21BCE0012,RSU Enterprises,2023,Not placed,SENSE,Dream offer,20 LPA
+Mark Black,21BME0013,XYZ Corp,2024,Shortlisted,SCOPE,Super dream internship,25 LPA
+Nina Green,21BCE0014,DEF Ltd,2023,Applied,SMEC,Dream internship,18 LPA
+Oscar Blue,21BEC0015,MNO Enterprises,2024,Placed,SENSE,Super dream offer,45 LPA
+Paul Brown,21BCE0016,ABC Solutions,2023,Shortlisted,SCOPE,Restricted dream offer,28 LPA
+Quinn Purple,21BME0017,RSU Tech,2023,Not placed,SMEC,Dream offer,30 LPA
+Rachel Yellow,21BCE0018,GHI Systems,2024,Placed,SENSE,Super dream internship,33 LPA
+Sam White,21BEC0019,XYZ Solutions,2023,Applied,SCOPE,Super dream offer,38 LPA
+Tom Black,21BCE0020,MNO Ltd,2024,Not placed,SMEC,Dream internship,25 LPA
+Ursula Pink,21BME0021,DEF Enterprises,2023,Shortlisted,SENSE,Super dream internship,22 LPA
+Vera Green,21BCE0022,RSU Tech,2023,Placed,SMEC,Dream offer,50 LPA
+Will Brown,21BEC0023,ABC Group,2024,Not placed,SCOPE,Super dream offer,18 LPA
+Xander Red,21BCE0024,GHI Ltd,2023,Applied,SENSE,Dream offer,20 LPA
+Yara Yellow,21BME0025,MNO Solutions,2024,Shortlisted,SMEC,Super dream internship,23 LPA
+Zane Purple,21BCE0026,RSU Corp,2023,Placed,SCOPE,Restricted dream offer,30 LPA
+Adam White,21BEC0027,XYZ Enterprises,2024,Not placed,SMEC,Super dream offer,25 LPA
+Bella Green,21BCE0028,DEF Tech,2023,Shortlisted,SENSE,Dream internship,18 LPA
+Caleb Black,21BME0029,GHI Systems,2023,Applied,SCOPE,Super dream offer,40 LPA
+Diana Blue,21BCE0030,ABC Ltd,2024,Placed,SENSE,Dream internship,35 LPA
+Eve Pink,21BEC0031,RSU Solutions,2023,Shortlisted,SMEC,Super dream internship,28 LPA
+Felix Yellow,21BCE0032,MNO Corp,2024,Not placed,SCOPE,Super dream offer,22 LPA
+Grace Red,21BME0033,DEF Enterprises,2023,Placed,SENSE,Super dream offer,45 LPA
+Henry Brown,21BCE0034,GHI Co.,2023,Not placed,SMEC,Super dream internship,20 LPA
+Isla Green,21BEC0035,XYZ Tech,2024,Shortlisted,SENSE,Restricted dream offer,25 LPA
+Jake Blue,21BCE0036,RSU Ltd,2023,Applied,SCOPE,Dream internship,15 LPA
+Luna White,21BME0037,DEF Solutions,2024,Placed,SMEC,Super dream offer,50 LPA
+Maya Pink,21BCE0038,MNO Tech,2023,Not placed,SENSE,Dream offer,23 LPA
+Nina Red,21BEC0039,GHI Corp,2024,Applied,SCOPE,Super dream internship,30 LPA
+Oscar Green,21BCE0040,ABC Enterprises,2023,Shortlisted,SENSE,Super dream offer,40 LPA
+Peter Brown,21BME0041,RSU Solutions,2024,Placed,SCOPE,Super dream offer,45 LPA
+Quinn White,21BCE0042,MNO Systems,2023,Not placed,SMEC,Dream internship,20 LPA
+Riley Black,21BEC0043,DEF Corp,2024,Shortlisted,SENSE,Super dream internship,28 LPA
+Sophia Yellow,21BCE0044,XYZ Ltd,2023,Placed,SMEC,Dream offer,38 LPA
+Travis Red,21BME0045,ABC Solutions,2024,Applied,SCOPE,Super dream offer,32 LPA
+Uma Green,21BCE0046,RSU Enterprises,2023,Shortlisted,SENSE,Dream offer,18 LPA
+Victor Pink,21BEC0047,MNO Ltd,2023,Not placed,SCOPE,Super dream internship,27 LPA
+Wendy Blue,21BCE0048,DEF Ltd,2024,Placed,SMEC,Super dream offer,50 LPA
+Xander White,21BME0049,GHI Enterprises,2023,Shortlisted,SENSE,Dream internship,22 LPA
+Yvonne Green,21BCE0050,XYZ Systems,2024,Not placed,SMEC,Super dream offer,25 LPA
+Zara Yellow,21BEC0051,ABC Co.,2023,Applied,SENSE,Dream internship,30 LPA
+Adam Black,21BCE0052,RSU Ltd,2024,Shortlisted,SENSE,Super dream internship,33 LPA
+Bella White,21BCE0053,MNO Enterprises,2023,Not placed,SCOPE,Super dream offer,25 LPA
+Caleb Red,21BME0054,DEF Tech,2023,Placed,SMEC,Dream offer,50 LPA
+Diana Green,21BEC0055,XYZ Solutions,2024,Shortlisted,SENSE,Super dream internship,27 LPA
+Eve Black,21BCE0056,RSU Systems,2023,Applied,SCOPE,Super dream offer,20 LPA
+Felix White,21BEC0057,ABC Enterprises,2024,Not placed,SENSE,Dream internship,22 LPA
+Grace Yellow,21BME0058,DEF Ltd,2023,Shortlisted,SMEC,Super dream offer,40 LPA
+Henry White,21BCE0059,RSU Ltd,2024,Placed,SENSE,Super dream offer,45 LPA
+Isla Brown,21BEC0060,MNO Tech,2023,Not placed,SCOPE,Super dream internship,25 LPA
+Jake Green,21BME0061,DEF Co.,2024,Applied,SENSE,Dream internship,15 LPA
+Luna Red,21BEC0062,RSU Corp,2023,Shortlisted,SCOPE,Super dream internship,30 LPA
+Maya Brown,21BCE0063,XYZ Enterprises,2024,Not placed,SMEC,Super dream offer,20 LPA
+Nina White,21BCE0064,ABC Ltd,2023,Placed,SENSE,Dream internship,35 LPA
+Oscar Black,21BME0065,MNO Corp,2024,Shortlisted,SCOPE,Super dream offer,38 LPA
+Peter Yellow,21BEC0066,RSU Solutions,2023,Applied,SMEC,Super dream internship,32 LPA
+Quinn Brown,21BCE0067,DEF Systems,2024,Placed,SENSE,Super dream internship,28 LPA
+Riley White,21BME0068,XYZ Ltd,2023,Not placed,SCOPE,Dream offer,25 LPA
+Sophia Green,21BCE0069,MNO Ltd,2024,Shortlisted,SMEC,Super dream offer,27 LPA
+Travis White,21BCE0070,RSU Co.,2023,Applied,SENSE,Super dream internship,40 LPA
+Uma Red,21BEC0071,DEF Enterprises,2024,Placed,SMEC,Super dream offer,42 LPA
+Victor Blue,21BCE0072,XYZ Tech,2023,Shortlisted,SCOPE,Super dream internship,22 LPA
+Wendy Green,21BEC0073,ABC Ltd,2024,Not placed,SMEC,Dream internship,30 LPA
+Xander Brown,21BCE0074,RSU Ltd,2023,Applied,SENSE,Super dream offer,35 LPA
+Yvonne White,21BME0075,MNO Enterprises,2024,Shortlisted,SCOPE,Dream internship,20 LPA
+Zara Green,21BCE0076,DEF Co.,2023,Not placed,SMEC,Super dream internship,28 LPA
+Adam Brown,21BME0077,XYZ Tech,2024,Placed,SENSE,Super dream offer,40 LPA

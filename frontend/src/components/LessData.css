@@ -1,0 +1,89 @@
+.monitoring-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    margin: 100px auto;
+}
+
+.monitoring-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.monitoring-container label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    margin-left: 30px;
+}
+
+.year-selection-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+.year-dropdown {
+    flex: 1 1 calc(20% - 30px);
+    min-width: 200px;
+}
+
+select,
+button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+select {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.submit-btn {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 20%;
+    margin-left: 37%;
+}
+
+.submit-btn:hover {
+    background-color: #218838;
+}
+
+.monitoring-chart {
+    width: 100%;
+    height: 400px;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .year-dropdown {
+        flex: 1 1 100%;
+    }
+    .year-selection-container {
+        flex-direction: column;
+    }
+    .monitoring-container {
+        width: 95%;
+    }
+}

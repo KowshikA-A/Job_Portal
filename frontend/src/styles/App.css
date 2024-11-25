@@ -1,0 +1,290 @@
+/* General App Styles */
+
+.App {
+    font-family: 'Times New Roman';
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+h3 {
+    color: #0a0a0a;
+}
+
+.red-text {
+    color: red;
+}
+
+
+/* Navbar Styles */
+
+.navbar {
+    width: 100%;
+    background-color: #007bff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Home Button Styles */
+
+.home-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.home-button:hover {
+    background-color: #542188;
+    transform: scale(1.05);
+}
+
+
+/* Vertical Nav Styles */
+
+.vertical-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #28a745;
+    padding: 20px;
+    width: 220px;
+    height: calc(100vh - 60px);
+    position: fixed;
+    top: 60px;
+    left: 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.vertical-nav button,
+.vertical-nav select {
+    margin: 10px 0;
+    padding: 12px;
+    border: none;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.vertical-nav button:hover,
+.vertical-nav select:hover {
+    background: #f0f0f0;
+    transform: scale(1.05);
+}
+
+
+/* Select Styling */
+
+.vertical-nav select {
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+
+/* Results Container Styles */
+
+.results-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 240px);
+    margin-left: 240px;
+    /* Adjusted margin to account for vertical navbar width */
+    margin-top: 100px;
+    max-width: 800px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 380px;
+}
+
+
+/* Login and Register Page Styles */
+
+.auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.auth-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.2rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+/* Button Styling */
+
+button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.register-prompt {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+
+/* Charts Container Styles */
+
+.charts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Space between the charts */
+    margin-top: 20px;
+    /* Space between the results container and charts */
+    padding: 20px;
+    max-width: 70%;
+    margin-left: 300px;
+    /* Adjusted margin for alignment */
+}
+
+.chart-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    margin-left: 60px;
+    display: flex;
+}
+
+
+/* src/styles/App.css */
+
+.year-filter {
+    margin: 20px 10px;
+}
+
+.year-filter label {
+    margin-right: 10px;
+}
+
+.year-filter select {
+    padding: 5px;
+}
+
+.footer10 {
+    text-align: center;
+    padding: 1px;
+    background-color: rgb(52, 52, 52);
+    /* Set background to grey */
+    color: white;
+    /* Set text color to white */
+    position: fixed;
+    bottom: 0;
+    width: 110%;
+    height: 38px;
+    margin-left: -20px;
+}
+
+.footer {
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+.year-filter-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+/* Dropdown Styles (added) */
+
+.dropdown-menu {
+    display: none;
+    /* Hidden by default */
+    position: over;
+    /* Position it */
+    background-color: white;
+    /* Background color for dropdown */
+    border: 1px solid #ddd;
+    /* Border around dropdown */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    /* Shadow effect for dropdown */
+    z-index: 1001;
+    /* Ensure it sits above other elements */
+    padding: 10px;
+    /* Padding inside dropdown */
+    min-width: 150px;
+    /* Minimum width for dropdown */
+}
+
+.dropdown-menu li {
+    margin: 0;
+    /* Remove margin for dropdown items */
+}
+
+.dropdown-menu li a {
+    color: black;
+    /* Text color for dropdown items */
+    text-decoration: none;
+    /* No underline */
+    display: block;
+    /* Make the entire area clickable */
+    padding: 8px 12px;
+    /* Padding for dropdown items */
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f1f1f1;
+    /* Background on hover */
+}

@@ -1,0 +1,207 @@
+.job-notifications {
+    padding: 40px;
+    background-color: #f0f4f8;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    margin: 80px auto;
+    max-width: 90%;
+    font-family: 'Times New Roman';
+    /* Set font family here */
+}
+
+.job-notifications h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.job-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    flex: 1 1 280px;
+    cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.2s;
+    position: relative;
+    font-family: 'Times New Roman';
+    /* Set font family for job cards */
+}
+
+.job-card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+}
+
+.job-card h3 {
+    margin: 0 0 10px;
+    font-size: 28px;
+    color: #000000;
+    font-family: 'Times New Roman';
+}
+
+.job-card p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #000000;
+}
+
+.upload-button_1 {
+    position: absolute;
+    top: 90px;
+    right: 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 55px;
+}
+
+.upload-button_1:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 450px;
+    max-height: 80%;
+    overflow-y: auto;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+    margin: 0 0 20px;
+    color: #000000;
+    margin-top: 25px;
+    font-family: 'Times New Roman';
+    /* Ensure modal content uses Times New Roman */
+}
+
+.modal-content label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: 600;
+    font-family: 'Times New Roman';
+    /* Ensure label uses Times New Roman */
+}
+
+.modal-content input,
+.modal-content textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+    font-family: 'Times New Roman';
+    /* Ensure inputs use Times New Roman */
+}
+
+.modal-content input:focus,
+.modal-content textarea:focus {
+    border-color: #4CAF50;
+}
+
+.close-button_1 {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 12px 20px;
+    border-radius: 6px;
+    width: fit-content;
+    margin: 10px auto;
+    margin-left: 174px;
+    font-family: 'Times New Roman';
+    /* Ensure close button uses Times New Roman */
+}
+
+.close-button_1:hover {
+    background-color: #45a049;
+}
+
+.remove-buttonn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 37px;
+    height: 35px;
+    color: red;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.remove-buttonn:hover {
+    color: white;
+    background-color: #e74c3c;
+    border-radius: 50%;
+}
+
+.evenn {
+    color: #000000;
+    font-size: 18px;
+}
+
+.edit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 5px;
+    right: 40px;
+    /* Adjust position to the left of delete button */
+    width: 37px;
+    /* Same width as delete button */
+    height: 35px;
+    /* Same height as delete button */
+    color: rgb(29, 155, 29);
+    /* Change color for edit (you can use any color) */
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 17px;
+    /* Set font size for icon */
+}
+
+.edit-button:hover {
+    color: white;
+    background-color: rgb(0, 159, 0);
+    /* A background color for hover effect */
+    border-radius: 15%;
+}

@@ -1,0 +1,97 @@
+        .upload-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+        }
+        
+        .upload-button {
+            margin-top: 10px;
+            padding: 12px 25px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 150px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            margin-bottom: 30px;
+        }
+        
+        .upload-button:hover {
+            background-color: #45a049;
+        }
+        
+        .upload-status {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333;
+            text-align: center;
+        }
+        
+        input[type="file"] {
+            margin-top: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px 10px 10px 10px;
+            border-color: rgb(31, 31, 31);
+        }
+        
+        @media (max-width: 768px) {
+            .upload-container {
+                margin-top: 100px;
+                width: 90%;
+            }
+            .upload-button {
+                max-width: 100%;
+            }
+            input[type="file"] {
+                max-width: 100%;
+            }
+        }
+        
+        .success-message {
+            color: green;
+        }
+        
+        .error-message {
+            color: red;
+        }
+        
+        .red-text {
+            color: red;
+        }
+        
+        .blue-text {
+            color: blue;
+        }
+        
+        .align {
+            align-items: flex-start;
+            margin-left: -30px;
+        }
+        
+        .required-columns-section {
+            margin-top: 20px;
+            /* Adjust this value for desired spacing */
+        }
+        
+        .align {
+            margin-top: 10px;
+        }
+        
+        .blue-text,
+        .red-text {
+            margin-left: 10px;
+        }

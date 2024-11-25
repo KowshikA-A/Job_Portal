@@ -1,0 +1,58 @@
+/* Vertical Nav Styles */
+
+.vertical-nav {
+    top: 77px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #34e35d !important;
+    /* Green background color */
+    padding: 10px;
+    /* Adjusted padding */
+    width: 180px;
+    /* Width of the vertical nav */
+    /* Adjusted height to account for the top navbar height */
+    position: fixed;
+    /* Fixed position */
+    top: 60px;
+    /* Position it slightly down from the top (height of the top navbar) */
+    left: 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    /* Optional shadow */
+    z-index: 1000;
+    /* Ensure it is above other content */
+    overflow: hidden;
+    /* Hide overflow */
+}
+
+.vertical-nav button,
+.vertical-nav select {
+    margin: 10px 0;
+    /* Increased margin for more spacing */
+    padding: 10px 15px;
+    /* Increased padding for larger buttons */
+    border: none;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+    border-radius: 6px;
+    /* Increased border radius for rounded corners */
+    font-size: 14px;
+    /* Increased font size */
+    transition: background 0.3s;
+    width: 90%;
+}
+
+.vertical-nav button:hover,
+.vertical-nav select:hover {
+    background: #f8f9fa;
+}
+
+
+/* Select Styling */
+
+.vertical-nav select {
+    width: auto;
+    /* Auto width to fit content */
+    background: #fff;
+}

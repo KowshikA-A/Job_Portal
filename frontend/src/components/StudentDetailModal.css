@@ -1,0 +1,188 @@
+/* Modal Overlay with Gradient Effect */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(50, 50, 50, 0.5));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    font-family: 'Times New Roman', serif;
+    transition: opacity 0.3s ease;
+}
+
+
+/* Modal Content Styling */
+
+.modal-content {
+    position: relative;
+    max-height: 80vh;
+    overflow-y: auto;
+    width: 60%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Modal Heading with Gradient Text */
+
+.modal-content h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #00274f;
+    font-weight: 600;
+    background: linear-gradient(to right, #e74c3c, #3498db);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 1px;
+}
+
+
+/* Close Icon in Top-Right Corner */
+
+.close-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5rem;
+    color: #e74c3c;
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.3s ease, background-color 0.2s ease, box-shadow 0.3s ease;
+    padding: 8px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.close-icon:hover {
+    color: #ffffff;
+    background-color: #c0392b;
+    transform: scale(1.15);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Student Details Styling */
+
+.student-details p {
+    font-size: 1.2rem;
+    color: #001b94;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.student-details p:hover {
+    color: #000000;
+    transform: translateX(5px);
+}
+
+
+/* Applications List Styling */
+
+.applications-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    width: 100%;
+}
+
+.applications-list div {
+    margin: 10px 0;
+    /* Add vertical spacing */
+    line-height: 1.5;
+    /* Adjust line height */
+}
+
+.applications-list:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Status Styling for Applications */
+
+.applications-list span {
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-left: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+
+/* Different Status Colors */
+
+.applications-list .applied {
+    background-color: #00365b;
+    color: white;
+}
+
+.applications-list .shortlisted {
+    background-color: #f39c12;
+    color: white;
+}
+
+.applications-list .placed {
+    background-color: #27ae60;
+    color: white;
+}
+
+.applications-list .not-placed {
+    background-color: #e74c3c;
+    color: white;
+}
+
+
+/* Responsive Design for Modal */
+
+@media (max-width: 600px) {
+    .modal-content {
+        width: 90%;
+        padding: 15px;
+        /* Reduced padding for small screens */
+    }
+    .student-details p {
+        font-size: 1rem;
+    }
+    .applications-list {
+        padding: 10px;
+    }
+    .applications-list span {
+        font-size: 0.9rem;
+    }
+    .applications-list div {
+        margin-bottom: 15px;
+        /* Ensure spacing between items */
+    }
+}
+
+
+/* Flexbox adjustments for .even class */
+
+.even {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.even div {
+    margin-bottom: 10px;
+    /* Add spacing between items */
+}

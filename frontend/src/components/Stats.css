@@ -1,0 +1,65 @@
+.stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.description {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.stats-card {
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 20px);
+    /* Ensures two cards in a row with consistent spacing */
+    text-align: center;
+    font-size: 16px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    margin-top: 1px;
+}
+
+@media (min-width: 768px) {
+    .stats-card {
+        flex-basis: calc(50% - 20px);
+        max-width: 400px;
+    }
+}
+
+.year {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.total-students,
+.placed,
+.not-placed {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.total-students span,
+.placed span,
+.not-placed span {
+    font-weight: bold;
+    color: #000000;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+}
+
+.stats-card:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}

@@ -1,0 +1,104 @@
+/* Style the chart container */
+
+.chart-container {
+    position: relative;
+    height: 400px;
+    /* Set a fixed height for the chart */
+    width: 100%;
+    /* Make it responsive */
+    margin: 0 auto;
+    /* Center it horizontally */
+    padding: 20px;
+    /* Padding around the chart */
+}
+
+
+/* Heading styling */
+
+h2 {
+    text-align: center;
+    /* Center align the heading */
+    font-size: 1.8rem;
+    /* Set the font size */
+    font-weight: 600;
+    /* Bold the font */
+    margin-bottom: 20px;
+    /* Space below the heading */
+    color: #333;
+    /* Dark text color */
+}
+
+
+/* Loading or no data message */
+
+p {
+    text-align: center;
+    /* Center align the text */
+    font-size: 1rem;
+    /* Set font size */
+    color: #555;
+    /* Set text color to a lighter shade */
+    /* Italicize the text */
+    padding: 10px 0;
+    /* Add some vertical padding */
+}
+
+
+/* Styling for the legend */
+
+.chartjs-legend {
+    font-size: 12px;
+    /* Smaller font size for legend items */
+    margin: 20px auto;
+    /* Add space around the legend */
+    padding: 10px;
+    /* Padding inside the legend */
+    text-align: center;
+    /* Center align the legend */
+}
+
+
+/* Tooltip styling */
+
+.chartjs-tooltip {
+    font-size: 14px;
+    /* Set font size for the tooltip */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Dark background for the tooltip */
+    color: white;
+    /* White text color for better readability */
+    border-radius: 5px;
+    /* Rounded corners for the tooltip */
+    padding: 8px;
+    /* Padding inside the tooltip */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow effect */
+}
+
+
+/* Customize chart tooltips to improve visibility */
+
+.chartjs-tooltip .tooltip-body {
+    color: #fff;
+    /* White text color */
+    font-size: 12px;
+    /* Adjust font size */
+}
+
+
+/* Responsiveness */
+
+@media (max-width: 768px) {
+    .chart-container {
+        height: 300px;
+        /* Decrease height for smaller screens */
+    }
+    h2 {
+        font-size: 1.5rem;
+        /* Adjust font size for smaller screens */
+    }
+    p {
+        font-size: 0.9rem;
+        /* Decrease font size for smaller screens */
+    }
+}

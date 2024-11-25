@@ -1,0 +1,135 @@
+/* Vertical Nav Styles */
+
+.vertical-nav {
+    top: 77px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #34e35d !important;
+    /* Green background color */
+    padding: 10px;
+    /* Adjusted padding */
+    width: 180px;
+    /* Width of the vertical nav */
+    position: fixed;
+    /* Fixed position */
+    top: 60px;
+    /* Position it slightly down from the top (height of the top navbar) */
+    left: 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    /* Optional shadow */
+    z-index: 1000;
+    /* Ensure it is above other content */
+}
+
+.vertical-nav button,
+.vertical-nav select {
+    margin: 10px 0;
+    /* Increased margin for more spacing */
+    padding: 10px 15px;
+    /* Increased padding for larger buttons */
+    border: none;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+    border-radius: 6px;
+    /* Increased border radius for rounded corners */
+    font-size: 14px;
+    /* Increased font size */
+    transition: background 0.3s;
+    width: 90%;
+    /* Set button width */
+}
+
+.vertical-nav button:hover,
+.vertical-nav select:hover {
+    background: #f8f9fa;
+    /* Background change on hover */
+}
+
+
+/* Tooltip Styles */
+
+.tooltip {
+    position: absolute;
+    /* Absolute positioning for tooltip */
+    background-color: #f0ebeb;
+    /* Tooltip background color */
+    border: 1px solid #bababa;
+    /* Tooltip border */
+    padding: 5px 10px;
+    /* Padding inside the tooltip */
+    border-radius: 4px;
+    /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* Shadow effect */
+    z-index: 10;
+    /* Ensure tooltip is above other elements */
+    white-space: nowrap;
+    /* Prevent line breaks */
+    font-size: 15px;
+    /* Font size for tooltip */
+    color: #000000;
+    /* Tooltip text color */
+    transition: opacity 0.5s ease-in-out;
+    /* Fade-in effect */
+}
+
+.nav-link {
+    display: inline-block;
+    /* Make it behave like a block element */
+    padding: 10px 15px;
+    /* Add some padding */
+    margin: 5px;
+    /* Add some margin */
+    background-color: #ffffff;
+    /* Button color */
+    color: rgb(0, 0, 0);
+    /* Text color */
+    text-decoration: none;
+    /* Remove underline */
+    border-radius: 5px;
+    /* Rounded corners */
+    border: none;
+    /* Remove border */
+    cursor: pointer;
+    width: 70%;
+    transition: background 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #fffefe;
+    /* Darker color on hover */
+}
+
+.back-button {
+    background-color: #ff0000;
+    /* Red background */
+    border: none;
+    padding: 10px 15px;
+    /* Adjust padding to reduce button size */
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Centers the text and icon */
+    width: auto;
+    /* Button width based on content */
+    max-width: 50px;
+    /* Limits maximum width of the button */
+    border-radius: 5px;
+    /* Optional: Adds rounded corners */
+}
+
+.back-button:hover {
+    background-color: #cc0000;
+    /* Darker red on hover */
+}
+
+.back-button .fa-arrow-left {
+    margin-right: 8px;
+    /* Space between icon and text */
+}

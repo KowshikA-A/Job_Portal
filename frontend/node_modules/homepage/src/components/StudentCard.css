@@ -1,0 +1,163 @@
+/* Container to hold the student cards */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+/* Styles for individual student cards */
+
+.student-card {
+    background-color: #f8f9fa;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 30px);
+    /* 4 cards per row */
+    min-height: 250px;
+    text-align: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    cursor: pointer;
+}
+
+
+/* Card hover effect for subtle elevation */
+
+.student-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Status-specific border and background colors */
+
+.student-card.placed {
+    border-color: #c3e6cb;
+}
+
+.student-card.not-placed {
+    border-color: #f5c6cb;
+}
+
+.student-card.shortlisted {
+    border-color: #ffeeba;
+}
+
+
+/* Hover effect for each status */
+
+.student-card.placed:hover {
+    background-color: rgb(108, 178, 108);
+}
+
+.student-card.not-placed:hover {
+    background-color: rgb(255, 112, 112);
+}
+
+.student-card.shortlisted:hover {
+    background-color: rgb(252, 198, 96);
+}
+
+
+/* For a clean display of company statuses */
+
+.student-companies {
+    text-align: left;
+    margin-top: 10px;
+    overflow-y: auto;
+    height: 100%;
+}
+
+
+/* Style for unordered list of companies */
+
+.student-companies ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Company status display */
+
+.company-status {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+
+/* Company and status text */
+
+.company-name,
+.status-colon,
+.status {
+    margin: 0 5px;
+}
+
+
+/* Make the colon bold to highlight separation */
+
+.status-colon {
+    font-weight: bold;
+}
+
+
+/* Scrollbar for overflowing content inside student card */
+
+.student-card::-webkit-scrollbar {
+    width: 8px;
+}
+
+.student-card::-webkit-scrollbar-thumb {
+    background-color: #dee2e6;
+    border-radius: 10px;
+}
+
+.student-card::-webkit-scrollbar-track {
+    background: #f8f9fa;
+}
+
+
+/* Ensure 4 cards per row on both large and medium screens */
+
+@media (max-width: 1300px) {
+    .student-card {
+        width: calc(29% - 30px);
+        /* 4 cards per row on medium screens */
+    }
+}
+
+
+/* For smaller screens, adjust to 2 cards per row */
+
+@media (max-width: 768px) {
+    .student-card {
+        width: calc(50% - 30px);
+        /* 2 cards per row */
+    }
+}
+
+
+/* For mobile screens, show 1 card per row */
+
+@media (max-width: 680px) {
+    .student-card {
+        width: calc(100% - 30px);
+        /* 1 card per row */
+    }
+}
