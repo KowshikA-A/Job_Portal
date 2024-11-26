@@ -18,7 +18,7 @@ const xlsx = require('xlsx');
 const port = process.env.PORT || 3000;
 
 app.use(cors({
-  origin: ["https://job-portal-eight-eta.vercel.app"],
+  origin: ["https://job-portal-eight-eta.vercel.app/login"],
   methods: ["POST", "GET"],
   credentials: true
 }));
