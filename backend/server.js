@@ -5,8 +5,6 @@ const bodyParser = require('body-parser');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const { body, validationResult } = require('express-validator');
-const nodemailer = require('nodemailer');
-require('dotenv').config();
 const User = require('./models/User');
 const Student = require('./models/Student');
 const LoginSession = require('./models/LoginSession');
