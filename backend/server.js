@@ -18,7 +18,7 @@ const app = express();
 const xlsx = require('xlsx');
 
 app.use(cors({
-  origin: ["https://deploy-merd-1wha.vercel.app"],
+  origin: ["https://job-portal-eight-eta.vercel.app/"],
   methods: ["POST", "GET"],
   credentials: true
 }));
