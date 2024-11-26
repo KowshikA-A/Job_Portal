@@ -25,7 +25,7 @@ function App() {
     const [year, setYear] = useState(null);
     const [showCompanyList, setShowCompanyList] = useState(false);
     const [searchTerm, setSearchTerm] = useState('');
-    const [name, setName] = useState('');
+    const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
     const handleSearch = (term) => setSearchTerm(term);
@@ -44,7 +44,7 @@ function App() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        axios.post('https://job-portalapi.vercel.app/login', { Username, Password })
+        axios.post('https://job-portalapi.vercel.app/login', { username, password })
             .then(result => {
                 console.log(result);
             })
