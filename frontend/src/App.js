@@ -6,7 +6,7 @@ import Stats from './components/Stats';
 import CompanyList from './components/CompanyList';
 import StudentList from './components/StudentList';
 import About from './components/About';
-import Contact from './components/Contact';
+import Contact from './components/contact';
 import Monitoring from './components/LessData';
 import MoreData from './components/MoreData';
 import Login from './components/Login';
