@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Job_Portal
 =======
 # Getting Started with Create React App
