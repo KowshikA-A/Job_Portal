@@ -15,8 +15,10 @@ const csv = require('csv-parser');
 const app = express();
 const xlsx = require('xlsx');
 
+const port = process.env.PORT || 3000;
+
 app.use(cors({
-  origin: ["https://job-portal-eight-eta.vercel.app/"],
+  origin: ["https://job-portal-eight-eta.vercel.app"],
   methods: ["POST", "GET"],
   credentials: true
 }));
