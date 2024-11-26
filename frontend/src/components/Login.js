@@ -5,7 +5,6 @@ import './Login.css';
 const Login = ({ onLogin = () => {}, onSwitchToRegister = () => {} }) => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const [errorMessage, setErrorMessage] = useState('');
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -14,15 +13,13 @@ const Login = ({ onLogin = () => {}, onSwitchToRegister = () => {} }) => {
             navigate('/');
         }
     }, [navigate]);
-
     const handleRegisterClick = () => {
         onSwitchToRegister();
         navigate('/register');
     };
 
-    const handleSubmit = async (event) => {
+    const handleSubmit = async(event) => {
         event.preventDefault();
-        setErrorMessage('');
 
         try {
             const response = await fetch('http://localhost:1000/api/login', {
@@ -40,50 +37,60 @@ const Login = ({ onLogin = () => {}, onSwitchToRegister = () => {} }) => {
                 localStorage.setItem('authToken', data.token);
                 navigate('/');
             } else {
-                setErrorMessage(data.message || 'Login failed');
+                alert(data.message || 'Login failed');
             }
         } catch (error) {
             console.error('Error logging in:', error);
-            setErrorMessage('An error occurred. Please try again.');
+            alert('An error occurred. Please try again.');
         }
     };
 
-    return (
-        <div className="login-container">
-            <form className="login-form" onSubmit={handleSubmit}>
-                <h2>Login</h2>
-                {errorMessage && <p className="error-message">{errorMessage}</p>}
-                <div className="input-group">
-                    <label htmlFor="username">Username: </label>
-                    <input
-                        type="text"
-                        id="username"
-                        value={username}
-                        onChange={(e) => setUsername(e.target.value)}
-                        required
-                    />
-                </div>
-                <div className="input-group">
-                    <label htmlFor="password">Password: </label>
-                    <input
-                        type="password"
-                        id="password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        required
-                    />
-                </div>
-                <button type="submit" className="login-button">
-                    Login
-                </button>
-                <p className="register-prompt">
-                    Don't have an account?{' '}
-                    <button type="button" onClick={handleRegisterClick}>
-                        Register
-                    </button>
-                </p>
-            </form>
-        </div>
+    return ( <
+        div className = "login-container" >
+        <
+        form className = "login-form"
+        onSubmit = { handleSubmit } >
+        <
+        h2 > Login < /h2> <
+        div className = "input-group" >
+        <
+        label htmlFor = "username" > Username: < /label> <
+        input type = "text"
+        id = "username"
+        value = { username }
+        onChange = {
+            (e) => setUsername(e.target.value)
+        }
+        required /
+        >
+        <
+        /div> <
+        div className = "input-group" >
+        <
+        label htmlFor = "password" > Password: < /label> <
+        input type = "password"
+        id = "password"
+        value = { password }
+        onChange = {
+            (e) => setPassword(e.target.value)
+        }
+        required /
+        >
+        <
+        /div> <
+        button type = "submit"
+        className = "login-button" >
+        Login <
+        /button> <
+        p className = "register-prompt" >
+        Don’ t have an account ? { ' ' } <
+        button type = "button"
+        onClick = { handleRegisterClick } >
+        Register <
+        /button> < /
+        p > <
+        /form> < /
+        div >
     );
 };
 
