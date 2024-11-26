@@ -18,10 +18,11 @@ const app = express();
 const xlsx = require('xlsx');
 
 app.use(cors({
-  origin: true,   
-  methods: ['GET', 'POST'],  
-  credentials: true,         
+  origin: ["https://deploy-merd-1wha.vercel.app"],
+  methods: ["POST", "GET"],
+  credentials: true
 }));
+
 app.use(express.json());
 app.use(bodyParser.json());
 
