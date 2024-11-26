@@ -17,21 +17,8 @@ const csv = require('csv-parser');
 const app = express();
 const xlsx = require('xlsx');
 
-const allowedOrigins = [
-  'http://localhost:3000',  
-  'https://job-portal-eight-eta.vercel.app',  
-  'https://job-portal-git-main-kowshika-achanta-s-projects.vercel.app',  
-  'https://job-portal-74doix22m-kowshika-achanta-s-projects.vercel.app',  
-];
-
 app.use(cors({
-  origin: (origin, callback) => {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true); 
-    } else {
-      callback(new Error('Not allowed by CORS')); 
-    }
-  },
+  origin: true,   
   methods: ['GET', 'POST'],  
   credentials: true,         
 }));
