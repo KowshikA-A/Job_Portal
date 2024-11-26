@@ -44,7 +44,7 @@ function App() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        axios.post('https://job-portalapi.vercel.app/register', { name, password })
+        axios.post('https://job-portalapi.vercel.app/login', { name, password })
             .then(result => {
                 console.log(result);
             })
